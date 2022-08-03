@@ -7,7 +7,7 @@
     <title>POKEDEX</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light" id="body">
     <header class="header">
         <div class="navigation">
             <nav class="index">
@@ -19,14 +19,14 @@
                     <img src="assets/pokemonTitle.png">
                 </div>
                 <div class="index_parts">
-                    <input type="radio" class="mode" name="mode" value="dark">
-                    <label class="mode">Dark</label>
-                    <input type="radio" class="mode" name="mode" value="light" checked>
-                    <label class="mode">Light</label>
+                    <input type="radio" name="theme" id="radioDark" value="dark">
+                    <label for="radioDark">Dark</label>
+                    <input type="radio" name="theme" id="radioLight" value="light">
+                    <label for="radioLight">Light</label>
                 </div>
             </nav>
         </div>
     </header>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
