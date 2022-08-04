@@ -15,11 +15,13 @@
 body.light{ /* Configuración del tema claro */
     --bg_color: aquamarine;
     --tx_color: #001;
+    --bg_index_color: aqua;
 }
 
 body.dark{ /* Configuración del tema oscuro */
     --bg_color: #001;
     --tx_color: aquamarine;
+    --bg_index_color: #696969;
 }
 
 /******* Barra de navegación ******/
@@ -69,6 +71,7 @@ body.dark{ /* Configuración del tema oscuro */
     border: 2px solid var(--tx_color);
     border-width: auto;
     background-color: var(--bg_index_color);
+    color:var(--tx_color);
 }
 
 
