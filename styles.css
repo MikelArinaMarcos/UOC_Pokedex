@@ -1,16 +1,23 @@
-:root {
+/***************************************/
+/*    HOJA DE ESTILOS DE LA POKEDEX    */
+/*    ------------------------------   */
+/*    Creado por: Mikel Arina Marcos   */
+/***************************************/
+
+/****** Parámetros generales ******/
+:root { /* Configuración del estilo por defecto */
     --bg_color: aquamarine;
-    --tx_color: blue;
+    --tx_color: #001;
 }
 
-body.light{
+body.light{ /* Configuración del tema claro */
     --bg_color: aquamarine;
-    --tx_color: blue;
+    --tx_color: #001;
 }
 
-body.dark{
-    --bg_color: black;
-    --tx_color: white;
+body.dark{ /* Configuración del tema oscuro */
+    --bg_color: #001;
+    --tx_color: aquamarine;
 }
 
 
@@ -52,7 +59,7 @@ body.dark{
     color: var(--tx_color);
     float: left;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid var(--tx_color);
     border-radius: 20%;
     justify-content: space-between;
     margin-left: 2%;

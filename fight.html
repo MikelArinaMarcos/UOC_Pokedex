@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body class="light" id="body">
+    <header class="header">
+        <div class="navigation">
+            <nav class="index">
+                <div class="index_parts">
+                    <a href="fight.html"><button>Fight</button></a>
+                    <a href="index.html"><button>Home</button></a>
+                </div>
+                <div class="index_parts">
+                    <img src="assets/pokemonTitle.png">
+                </div>
+                <div class="index_parts">
+                    <input type="radio" name="theme" id="radioDark" value="dark">
+                    <label for="radioDark">Dark</label>
+                    <input type="radio" name="theme" id="radioLight" value="light">
+                    <label for="radioLight">Light</label>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
+<script src="script.js"></script>
 </html>
