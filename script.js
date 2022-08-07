@@ -59,7 +59,7 @@ radios.forEach( x => {
 
 //          CONSTANTES     \\
 
-//Carta 1
+// Carta 1
 const pokeCard = document.querySelector('[data-poke-card]');
 const pokeName = document.querySelector('[data-poke-name]');
 const pokeImg = document.querySelector('[data-poke-img]');
@@ -68,9 +68,50 @@ const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
 
+// Carta 2
+const pokeCard2 = document.querySelector('[data-poke-card2]');
+const pokeName2 = document.querySelector('[data-poke-name2]');
+const pokeImg2 = document.querySelector('[data-poke-img2]');
+const pokeImgContainer2 = document.querySelector('[data-poke-img-container2]');
+const pokeId2 = document.querySelector('[data-poke-id2]');
+const pokeTypes2 = document.querySelector('[data-poke-types2]');
+const pokeStats2 = document.querySelector('[data-poke-stats2]');
 
+// Carta 3
+const pokeCard3 = document.querySelector('[data-poke-card3]');
+const pokeName3 = document.querySelector('[data-poke-name3]');
+const pokeImg3 = document.querySelector('[data-poke-img3]');
+const pokeImgContainer3 = document.querySelector('[data-poke-img-container3]');
+const pokeId3 = document.querySelector('[data-poke-id3]');
+const pokeTypes3 = document.querySelector('[data-poke-types3]');
+const pokeStats3 = document.querySelector('[data-poke-stats3]');
 
+// Carta 4
+const pokeCard4 = document.querySelector('[data-poke-card4]');
+const pokeName4 = document.querySelector('[data-poke-name4]');
+const pokeImg4 = document.querySelector('[data-poke-img4]');
+const pokeImgContainer4 = document.querySelector('[data-poke-img-container4]');
+const pokeId4 = document.querySelector('[data-poke-id4]');
+const pokeTypes4 = document.querySelector('[data-poke-types4]');
+const pokeStats4 = document.querySelector('[data-poke-stats4]');
 
+// Carta 5
+const pokeCard5 = document.querySelector('[data-poke-card5]');
+const pokeName5 = document.querySelector('[data-poke-name5]');
+const pokeImg5 = document.querySelector('[data-poke-img5]');
+const pokeImgContainer5 = document.querySelector('[data-poke-img-container5]');
+const pokeId5 = document.querySelector('[data-poke-id5]');
+const pokeTypes5 = document.querySelector('[data-poke-types5]');
+const pokeStats5 = document.querySelector('[data-poke-stats5]');
+
+// Carta 6
+const pokeCard6 = document.querySelector('[data-poke-card6]');
+const pokeName6 = document.querySelector('[data-poke-name6]');
+const pokeImg6 = document.querySelector('[data-poke-img6]');
+const pokeImgContainer6 = document.querySelector('[data-poke-img-container6]');
+const pokeId6 = document.querySelector('[data-poke-id6]');
+const pokeTypes6 = document.querySelector('[data-poke-types6]');
+const pokeStats6 = document.querySelector('[data-poke-stats6]');
 
 const typeColors = {
     electric: '#FFEA70',
@@ -156,19 +197,6 @@ const renderNotFound = () => {
     pokeId.textContent = '';
 }
 
-
-
-
-
-
-
-const pokeCard2 = document.querySelector('[data-poke-card2]');
-const pokeName2 = document.querySelector('[data-poke-name2]');
-const pokeImg2 = document.querySelector('[data-poke-img2]');
-const pokeImgContainer2 = document.querySelector('[data-poke-img-container2]');
-const pokeId2 = document.querySelector('[data-poke-id2]');
-const pokeTypes2 = document.querySelector('[data-poke-types2]');
-const pokeStats2 = document.querySelector('[data-poke-stats2]');
 
 const typeColors2 = {
     electric: '#FFEA70',

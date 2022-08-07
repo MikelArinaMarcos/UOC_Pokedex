@@ -159,3 +159,10 @@ input {
     width: 180px;
     border-radius: 50%;
 }
+
+.main{
+    top: 60px;
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+}
