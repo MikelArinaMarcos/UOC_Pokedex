@@ -113,6 +113,42 @@ const pokeId6 = document.querySelector('[data-poke-id6]');
 const pokeTypes6 = document.querySelector('[data-poke-types6]');
 const pokeStats6 = document.querySelector('[data-poke-stats6]');
 
+// Carta 7
+const pokeCard7 = document.querySelector('[data-poke-card7]');
+const pokeName7 = document.querySelector('[data-poke-name7]');
+const pokeImg7 = document.querySelector('[data-poke-img7]');
+const pokeImgContainer7 = document.querySelector('[data-poke-img-container7]');
+const pokeId7 = document.querySelector('[data-poke-id7]');
+const pokeTypes7 = document.querySelector('[data-poke-types7]');
+const pokeStats7 = document.querySelector('[data-poke-stats7]');
+
+// Carta 8
+const pokeCard8 = document.querySelector('[data-poke-card8]');
+const pokeName8 = document.querySelector('[data-poke-name8]');
+const pokeImg8 = document.querySelector('[data-poke-img8]');
+const pokeImgContainer8 = document.querySelector('[data-poke-img-container8]');
+const pokeId8 = document.querySelector('[data-poke-id8]');
+const pokeTypes8 = document.querySelector('[data-poke-types8]');
+const pokeStats8 = document.querySelector('[data-poke-stats8]');
+
+// Carta 9
+const pokeCard9 = document.querySelector('[data-poke-card9]');
+const pokeName9 = document.querySelector('[data-poke-name9]');
+const pokeImg9 = document.querySelector('[data-poke-img9]');
+const pokeImgContainer9 = document.querySelector('[data-poke-img-container9]');
+const pokeId9 = document.querySelector('[data-poke-id9]');
+const pokeTypes9 = document.querySelector('[data-poke-types9]');
+const pokeStats9 = document.querySelector('[data-poke-stats9]');
+
+// Carta 10
+const pokeCard10 = document.querySelector('[data-poke-card10]');
+const pokeName10 = document.querySelector('[data-poke-name10]');
+const pokeImg10 = document.querySelector('[data-poke-img10]');
+const pokeImgContainer10 = document.querySelector('[data-poke-img-container10]');
+const pokeId10 = document.querySelector('[data-poke-id10]');
+const pokeTypes10 = document.querySelector('[data-poke-types10]');
+const pokeStats10 = document.querySelector('[data-poke-stats10]');
+
 const typeColors = {
     electric: '#FFEA70',
     normal: '#B09398',
@@ -138,6 +174,7 @@ function getRandomInt(max) {
   }
 
 const v1 = getRandomInt(150);
+
 
 fetch(`https://pokeapi.co/api/v2/pokemon/${v1}`)
         .then(data => data.json())
