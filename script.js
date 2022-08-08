@@ -401,32 +401,32 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${v3}`)
     .catch(err => renderNotFound3());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v4}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData4(response))
+    .catch(err => renderNotFound4());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v5}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData5(response))
+    .catch(err => renderNotFound5());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v6}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData6(response))
+    .catch(err => renderNotFound6());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v7}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData7(response))
+    .catch(err => renderNotFound7());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v8}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData8(response))
+    .catch(err => renderNotFound8());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v9}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData9(response))
+    .catch(err => renderNotFound9());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v10}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
-    .catch(err => renderNotFound3());
+    .then(response => renderPokemonData10(response))
+    .catch(err => renderNotFound10());
 
 
 /*  RENDER POKEMON DATA  */
@@ -697,6 +697,8 @@ const renderPokemonTypes10 = types => {
     });
 }
 
+
+/*   RENDER POKEMON STATS   */   
 const renderPokemonStats = stats => {
     pokeStats.innerHTML = '';
     stats.forEach(stat => {
@@ -710,16 +712,6 @@ const renderPokemonStats = stats => {
         pokeStats.appendChild(statElement);
     });
 }
-
-const renderNotFound = () => {
-    pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'poke-shadow.png');
-    pokeImg.style.background =  '#fff';
-    pokeTypes.innerHTML = '';
-    pokeStats.innerHTML = '';
-    pokeId.textContent = '';
-}
-
 const renderPokemonStats2 = stats => {
     pokeStats2.innerHTML = '';
     stats.forEach(stat => {
@@ -733,7 +725,121 @@ const renderPokemonStats2 = stats => {
         pokeStats2.appendChild(statElement2);
     });
 }
+const renderPokemonStats3 = stats => {
+    pokeStats3.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement3 = document.createElement("div");
+        const statElementName3 = document.createElement("div");
+        const statElementAmount3 = document.createElement("div");
+        statElementName3.textContent = stat.stat.name;
+        statElementAmount3.textContent = stat.base_stat;
+        statElement3.appendChild(statElementName3);
+        statElement3.appendChild(statElementAmount3);
+        pokeStats3.appendChild(statElement3);
+    });
+}
+const renderPokemonStats4 = stats => {
+    pokeStats4.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement4 = document.createElement("div");
+        const statElementName4 = document.createElement("div");
+        const statElementAmount4 = document.createElement("div");
+        statElementName4.textContent = stat.stat.name;
+        statElementAmount4.textContent = stat.base_stat;
+        statElement4.appendChild(statElementName4);
+        statElement4.appendChild(statElementAmount4);
+        pokeStats4.appendChild(statElement4);
+    });
+}
+const renderPokemonStats5 = stats => {
+    pokeStats5.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement5 = document.createElement("div");
+        const statElementName5 = document.createElement("div");
+        const statElementAmount5 = document.createElement("div");
+        statElementName5.textContent = stat.stat.name;
+        statElementAmount5.textContent = stat.base_stat;
+        statElement5.appendChild(statElementName5);
+        statElement5.appendChild(statElementAmount5);
+        pokeStats5.appendChild(statElement5);
+    });
+}
+const renderPokemonStats6 = stats => {
+    pokeStats6.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement6 = document.createElement("div");
+        const statElementName6 = document.createElement("div");
+        const statElementAmount6 = document.createElement("div");
+        statElementName6.textContent = stat.stat.name;
+        statElementAmount6.textContent = stat.base_stat;
+        statElement6.appendChild(statElementName6);
+        statElement6.appendChild(statElementAmount6);
+        pokeStats6.appendChild(statElement6);
+    });
+}
+const renderPokemonStats7 = stats => {
+    pokeStats7.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement7 = document.createElement("div");
+        const statElementName7 = document.createElement("div");
+        const statElementAmount7 = document.createElement("div");
+        statElementName7.textContent = stat.stat.name;
+        statElementAmount7.textContent = stat.base_stat;
+        statElement7.appendChild(statElementName7);
+        statElement7.appendChild(statElementAmount7);
+        pokeStats7.appendChild(statElement7);
+    });
+}
+const renderPokemonStats8 = stats => {
+    pokeStats8.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement8 = document.createElement("div");
+        const statElementName8 = document.createElement("div");
+        const statElementAmount8 = document.createElement("div");
+        statElementName8.textContent = stat.stat.name;
+        statElementAmount8.textContent = stat.base_stat;
+        statElement8.appendChild(statElementName8);
+        statElement8.appendChild(statElementAmount8);
+        pokeStats8.appendChild(statElement8);
+    });
+}
+const renderPokemonStats9 = stats => {
+    pokeStats9.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement9 = document.createElement("div");
+        const statElementName9 = document.createElement("div");
+        const statElementAmount9 = document.createElement("div");
+        statElementName9.textContent = stat.stat.name;
+        statElementAmount9.textContent = stat.base_stat;
+        statElement9.appendChild(statElementName9);
+        statElement9.appendChild(statElementAmount9);
+        pokeStats9.appendChild(statElement9);
+    });
+}
+const renderPokemonStats10 = stats => {
+    pokeStats10.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement10 = document.createElement("div");
+        const statElementName10 = document.createElement("div");
+        const statElementAmount10 = document.createElement("div");
+        statElementName10.textContent = stat.stat.name;
+        statElementAmount10.textContent = stat.base_stat;
+        statElement10.appendChild(statElementName10);
+        statElement10.appendChild(statElementAmount10);
+        pokeStats10.appendChild(statElement10);
+    });
+}
 
+
+/*   RENDER NOT FOUND   */
+const renderNotFound = () => {
+    pokeName.textContent = 'No encontrado';
+    pokeImg.setAttribute('src', 'poke-shadow.png');
+    pokeImg.style.background =  '#fff';
+    pokeTypes.innerHTML = '';
+    pokeStats.innerHTML = '';
+    pokeId.textContent = '';
+}
 const renderNotFound2 = () => {
     pokeName2.textContent = 'No encontrado';
     pokeImg2.setAttribute('src', 'poke-shadow.png');
@@ -741,4 +847,68 @@ const renderNotFound2 = () => {
     pokeTypes2.innerHTML = '';
     pokeStats2.innerHTML = '';
     pokeId2.textContent = '';
+}
+const renderNotFound3 = () => {
+    pokeName3.textContent = 'No encontrado';
+    pokeImg3.setAttribute('src', 'poke-shadow.png');
+    pokeImg3.style.background =  '#fff';
+    pokeTypes3.innerHTML = '';
+    pokeStats3.innerHTML = '';
+    pokeId3.textContent = '';
+}
+const renderNotFound4 = () => {
+    pokeName4.textContent = 'No encontrado';
+    pokeImg4.setAttribute('src', 'poke-shadow.png');
+    pokeImg4.style.background =  '#fff';
+    pokeTypes4.innerHTML = '';
+    pokeStats4.innerHTML = '';
+    pokeId4.textContent = '';
+}
+const renderNotFound5 = () => {
+    pokeName5.textContent = 'No encontrado';
+    pokeImg5.setAttribute('src', 'poke-shadow.png');
+    pokeImg5.style.background =  '#fff';
+    pokeTypes5.innerHTML = '';
+    pokeStats5.innerHTML = '';
+    pokeId5.textContent = '';
+}
+const renderNotFound6 = () => {
+    pokeName6.textContent = 'No encontrado';
+    pokeImg6.setAttribute('src', 'poke-shadow.png');
+    pokeImg6.style.background =  '#fff';
+    pokeTypes6.innerHTML = '';
+    pokeStats6.innerHTML = '';
+    pokeId6.textContent = '';
+}
+const renderNotFound7 = () => {
+    pokeName7.textContent = 'No encontrado';
+    pokeImg7.setAttribute('src', 'poke-shadow.png');
+    pokeImg7.style.background =  '#fff';
+    pokeTypes7.innerHTML = '';
+    pokeStats7.innerHTML = '';
+    pokeId7.textContent = '';
+}
+const renderNotFound8 = () => {
+    pokeName8.textContent = 'No encontrado';
+    pokeImg8.setAttribute('src', 'poke-shadow.png');
+    pokeImg8.style.background =  '#fff';
+    pokeTypes8.innerHTML = '';
+    pokeStats8.innerHTML = '';
+    pokeId8.textContent = '';
+}
+const renderNotFound9 = () => {
+    pokeName9.textContent = 'No encontrado';
+    pokeImg9.setAttribute('src', 'poke-shadow.png');
+    pokeImg9.style.background =  '#fff';
+    pokeTypes9.innerHTML = '';
+    pokeStats9.innerHTML = '';
+    pokeId9.textContent = '';
+}
+const renderNotFound10 = () => {
+    pokeName10.textContent = 'No encontrado';
+    pokeImg10.setAttribute('src', 'poke-shadow.png');
+    pokeImg10.style.background =  '#fff';
+    pokeTypes10.innerHTML = '';
+    pokeStats10.innerHTML = '';
+    pokeId10.textContent = '';
 }
