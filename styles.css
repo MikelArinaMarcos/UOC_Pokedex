@@ -110,10 +110,20 @@ body.dark{ /* Configuración del tema oscuro */
     align-items: center;
 }
 
+.cardMain{
+    margin-top: 5px;
+}
+
 .infoButtonSection{
     margin-top: 15px;
 }
 
+.infoButton{
+    background-color: var(--bg_color);
+    color:var(--tx_color);
+    width: 50%;
+    height: 30px;
+}
 
 form {
     width: 200px;

@@ -383,16 +383,16 @@ function getRandomInt9(max) {
 function getRandomInt10(max) {
     return Math.floor(Math.random() * max);
 }
-const v1 = getRandomInt(150);
-const v2 = getRandomInt2(150);
-const v3 = getRandomInt3(150);
-const v4 = getRandomInt4(150);
-const v5 = getRandomInt5(150);
-const v6 = getRandomInt6(150);
-const v7 = getRandomInt7(150);
-const v8 = getRandomInt8(150);
-const v9 = getRandomInt9(150);
-const v10 = getRandomInt10(150);
+const v1 = getRandomInt(450);
+const v2 = getRandomInt2(450);
+const v3 = getRandomInt3(450);
+const v4 = getRandomInt4(450);
+const v5 = getRandomInt5(450);
+const v6 = getRandomInt6(450);
+const v7 = getRandomInt7(450);
+const v8 = getRandomInt8(450);
+const v9 = getRandomInt9(450);
+const v10 = getRandomInt10(450);
 
 
 /*  BÚSQUEDA EN API REST  */
