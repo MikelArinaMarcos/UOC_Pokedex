@@ -67,6 +67,7 @@ const pokeImgContainer = document.querySelector('[data-poke-img-container]');
 const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
+const pokeStats_2 = document.querySelector('[data-poke-stats-2]');
 
 // Carta 2
 const pokeCard2 = document.querySelector('[data-poke-card2]');
@@ -76,6 +77,7 @@ const pokeImgContainer2 = document.querySelector('[data-poke-img-container2]');
 const pokeId2 = document.querySelector('[data-poke-id2]');
 const pokeTypes2 = document.querySelector('[data-poke-types2]');
 const pokeStats2 = document.querySelector('[data-poke-stats2]');
+const pokeStats2_2 = document.querySelector('[data-poke-stats-2_2]');
 
 // Carta 3
 const pokeCard3 = document.querySelector('[data-poke-card3]');
@@ -85,6 +87,7 @@ const pokeImgContainer3 = document.querySelector('[data-poke-img-container3]');
 const pokeId3 = document.querySelector('[data-poke-id3]');
 const pokeTypes3 = document.querySelector('[data-poke-types3]');
 const pokeStats3 = document.querySelector('[data-poke-stats3]');
+const pokeStats3_2 = document.querySelector('[data-poke-stats-2_3]');
 
 // Carta 4
 const pokeCard4 = document.querySelector('[data-poke-card4]');
@@ -94,6 +97,7 @@ const pokeImgContainer4 = document.querySelector('[data-poke-img-container4]');
 const pokeId4 = document.querySelector('[data-poke-id4]');
 const pokeTypes4 = document.querySelector('[data-poke-types4]');
 const pokeStats4 = document.querySelector('[data-poke-stats4]');
+const pokeStats4_2 = document.querySelector('[data-poke-stats-2_4]');
 
 // Carta 5
 const pokeCard5 = document.querySelector('[data-poke-card5]');
@@ -103,6 +107,7 @@ const pokeImgContainer5 = document.querySelector('[data-poke-img-container5]');
 const pokeId5 = document.querySelector('[data-poke-id5]');
 const pokeTypes5 = document.querySelector('[data-poke-types5]');
 const pokeStats5 = document.querySelector('[data-poke-stats5]');
+const pokeStats5_2 = document.querySelector('[data-poke-stats-2_5]');
 
 // Carta 6
 const pokeCard6 = document.querySelector('[data-poke-card6]');
@@ -112,6 +117,7 @@ const pokeImgContainer6 = document.querySelector('[data-poke-img-container6]');
 const pokeId6 = document.querySelector('[data-poke-id6]');
 const pokeTypes6 = document.querySelector('[data-poke-types6]');
 const pokeStats6 = document.querySelector('[data-poke-stats6]');
+const pokeStats6_2 = document.querySelector('[data-poke-stats-2_6]');
 
 // Carta 7
 const pokeCard7 = document.querySelector('[data-poke-card7]');
@@ -121,6 +127,7 @@ const pokeImgContainer7 = document.querySelector('[data-poke-img-container7]');
 const pokeId7 = document.querySelector('[data-poke-id7]');
 const pokeTypes7 = document.querySelector('[data-poke-types7]');
 const pokeStats7 = document.querySelector('[data-poke-stats7]');
+const pokeStats7_2 = document.querySelector('[data-poke-stats-2_7]');
 
 // Carta 8
 const pokeCard8 = document.querySelector('[data-poke-card8]');
@@ -130,6 +137,7 @@ const pokeImgContainer8 = document.querySelector('[data-poke-img-container8]');
 const pokeId8 = document.querySelector('[data-poke-id8]');
 const pokeTypes8 = document.querySelector('[data-poke-types8]');
 const pokeStats8 = document.querySelector('[data-poke-stats8]');
+const pokeStats8_2 = document.querySelector('[data-poke-stats-2_8]');
 
 // Carta 9
 const pokeCard9 = document.querySelector('[data-poke-card9]');
@@ -139,6 +147,7 @@ const pokeImgContainer9 = document.querySelector('[data-poke-img-container9]');
 const pokeId9 = document.querySelector('[data-poke-id9]');
 const pokeTypes9 = document.querySelector('[data-poke-types9]');
 const pokeStats9 = document.querySelector('[data-poke-stats9]');
+const pokeStats9_2 = document.querySelector('[data-poke-stats-2_9]');
 
 // Carta 10
 const pokeCard10 = document.querySelector('[data-poke-card10]');
@@ -148,7 +157,7 @@ const pokeImgContainer10 = document.querySelector('[data-poke-img-container10]')
 const pokeId10 = document.querySelector('[data-poke-id10]');
 const pokeTypes10 = document.querySelector('[data-poke-types10]');
 const pokeStats10 = document.querySelector('[data-poke-stats10]');
-
+const pokeStats10_2 = document.querySelector('[data-poke-stats-2_10]');
 
 /*    COLORES   */
 const typeColors = {
@@ -389,44 +398,152 @@ const v10 = getRandomInt10(150);
 /*  BÚSQUEDA EN API REST  */
 fetch(`https://pokeapi.co/api/v2/pokemon/${v1}`)
     .then(data => data.json())
-    .then(response => renderPokemonData(response))
+    .then(response => cargaCarta_1(response))
     .catch(err => renderNotFound());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v2}`)
     .then(data => data.json())
-    .then(response => renderPokemonData2(response))
+    .then(response => cargaCarta_2(response))
     .catch(err => renderNotFound2());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v3}`)
     .then(data => data.json())
-    .then(response => renderPokemonData3(response))
+    .then(response => cargaCarta_3(response))
     .catch(err => renderNotFound3());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v4}`)
     .then(data => data.json())
-    .then(response => renderPokemonData4(response))
+    .then(response => cargaCarta_4(response))
     .catch(err => renderNotFound4());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v5}`)
     .then(data => data.json())
-    .then(response => renderPokemonData5(response))
+    .then(response => cargaCarta_5(response))
     .catch(err => renderNotFound5());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v6}`)
     .then(data => data.json())
-    .then(response => renderPokemonData6(response))
+    .then(response => cargaCarta_6(response))
     .catch(err => renderNotFound6());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v7}`)
     .then(data => data.json())
-    .then(response => renderPokemonData7(response))
+    .then(response => cargaCarta_7(response))
     .catch(err => renderNotFound7());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v8}`)
     .then(data => data.json())
-    .then(response => renderPokemonData8(response))
+    .then(response => cargaCarta_8(response))
     .catch(err => renderNotFound8());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v9}`)
     .then(data => data.json())
-    .then(response => renderPokemonData9(response))
+    .then(response => cargaCarta_9(response))
     .catch(err => renderNotFound9());
 fetch(`https://pokeapi.co/api/v2/pokemon/${v10}`)
     .then(data => data.json())
-    .then(response => renderPokemonData10(response))
+    .then(response => cargaCarta_10(response))
     .catch(err => renderNotFound10());
+
+
+
+/*****************************************************/ 
+/*           CARGAR CARTA EN index.html              */
+/*****************************************************/
+
+// Carta 1
+const cargaCarta_1 = data => { 
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName.textContent = data.name;
+    pokeImg.setAttribute('src', sprite);
+    pokeStats.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor(types);
+}
+const cargaCarta_2 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName2.textContent = data.name;
+    pokeImg2.setAttribute('src', sprite);
+    pokeStats2.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats2_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor2(types);
+}
+const cargaCarta_3 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName3.textContent = data.name;
+    pokeImg3.setAttribute('src', sprite);
+    pokeStats3.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats3_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor3(types);
+}
+const cargaCarta_4 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName4.textContent = data.name;
+    pokeImg4.setAttribute('src', sprite);
+    pokeStats4.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats4_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor4(types);
+}
+const cargaCarta_5 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName5.textContent = data.name;
+    pokeImg5.setAttribute('src', sprite);
+    pokeStats5.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats5_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor5(types);
+}
+const cargaCarta_6 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName6.textContent = data.name;
+    pokeImg6.setAttribute('src', sprite);
+    pokeStats6.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats6_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor6(types);
+}
+const cargaCarta_7 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName7.textContent = data.name;
+    pokeImg7.setAttribute('src', sprite);
+    pokeStats7.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats7_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor7(types);
+}
+const cargaCarta_8 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName8.textContent = data.name;
+    pokeImg8.setAttribute('src', sprite);
+    pokeStats8.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats8_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor8(types);
+}
+const cargaCarta_9 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName9.textContent = data.name;
+    pokeImg9.setAttribute('src', sprite);
+    pokeStats9.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats9_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor9(types);
+}
+const cargaCarta_10 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName10.textContent = data.name;
+    pokeImg10.setAttribute('src', sprite);
+    pokeStats10.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats10_2.textContent = `Defense: ${data.stats[2].base_stat}`;
+    setCardColor10(types);
+}
 
 
 /*  RENDER POKEMON DATA  */
@@ -436,10 +553,12 @@ const renderPokemonData = data => {
 
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
-    pokeId.textContent = `Nº ${data.id}`;
+    //pokeId.textContent = `Nº ${data.id}`;
+    pokeStats.textContent = `Attack: ${data.stats[1].base_stat}`;
+    pokeStats_2.textContent = `Defense: ${data.stats[2].base_stat}`;
     setCardColor(types);
-    renderPokemonTypes(types);
-    renderPokemonStats(stats);
+    //renderPokemonTypes(types);
+    //renderPokemonStats(stats);
 }
 const renderPokemonData2 = data => {
     const sprite =  data.sprites.front_default;
@@ -698,18 +817,26 @@ const renderPokemonTypes10 = types => {
 }
 
 
+function ataque(){
+
+}
+
+
 /*   RENDER POKEMON STATS   */   
 const renderPokemonStats = stats => {
     pokeStats.innerHTML = '';
-    stats.forEach(stat => {
+
+    stats.forEach (stat => {
         const statElement = document.createElement("div");
         const statElementName = document.createElement("div");
         const statElementAmount = document.createElement("div");
+        
         statElementName.textContent = stat.stat.name;
         statElementAmount.textContent = stat.base_stat;
         statElement.appendChild(statElementName);
         statElement.appendChild(statElementAmount);
         pokeStats.appendChild(statElement);
+            console.log(statElementName);
     });
 }
 const renderPokemonStats2 = stats => {
