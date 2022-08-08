@@ -149,6 +149,8 @@ const pokeId10 = document.querySelector('[data-poke-id10]');
 const pokeTypes10 = document.querySelector('[data-poke-types10]');
 const pokeStats10 = document.querySelector('[data-poke-stats10]');
 
+
+/*    COLORES   */
 const typeColors = {
     electric: '#FFEA70',
     normal: '#B09398',
@@ -168,19 +170,266 @@ const typeColors = {
     fighting: '#2F2F2F',
     default: '#2A1A1F',
 };
+const typeColors2 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors3 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors4 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors5 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors6 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors7 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors8 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors9 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
+const typeColors10 = {
+    electric: '#FFEA70',
+    normal: '#B09398',
+    fire: '#FF675C',
+    water: '#0596C7',
+    ice: '#AFEAFD',
+    rock: '#999799',
+    flying: '#7AE7C7',
+    grass: '#4A9681',
+    psychic: '#FFC6D9',
+    ghost: '#561D25',
+    bug: '#A2FAA3',
+    poison: '#795663',
+    ground: '#D2B074',
+    dragon: '#DA627D',
+    steel: '#1D8A99',
+    fighting: '#2F2F2F',
+    default: '#2A1A1F',
+};
 
+
+/* GENERADOR NÚMEROS ALEATORIOS  */
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
-
+function getRandomInt2(max) {
+    return Math.floor(Math.random() * max);
+  }
+function getRandomInt3(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt4(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt5(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt6(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt7(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt8(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt9(max) {
+    return Math.floor(Math.random() * max);
+}
+function getRandomInt10(max) {
+    return Math.floor(Math.random() * max);
+}
 const v1 = getRandomInt(150);
+const v2 = getRandomInt2(150);
+const v3 = getRandomInt3(150);
+const v4 = getRandomInt4(150);
+const v5 = getRandomInt5(150);
+const v6 = getRandomInt6(150);
+const v7 = getRandomInt7(150);
+const v8 = getRandomInt8(150);
+const v9 = getRandomInt9(150);
+const v10 = getRandomInt10(150);
 
 
+/*  BÚSQUEDA EN API REST  */
 fetch(`https://pokeapi.co/api/v2/pokemon/${v1}`)
-        .then(data => data.json())
-        .then(response => renderPokemonData(response))
-        .catch(err => renderNotFound());
+    .then(data => data.json())
+    .then(response => renderPokemonData(response))
+    .catch(err => renderNotFound());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v2}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData2(response))
+    .catch(err => renderNotFound2());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v3}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v4}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v5}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v6}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v7}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v8}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v9}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
+fetch(`https://pokeapi.co/api/v2/pokemon/${v10}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData3(response))
+    .catch(err => renderNotFound3());
 
+
+/*  RENDER POKEMON DATA  */
 const renderPokemonData = data => {
     const sprite =  data.sprites.front_default;
     const { stats, types } = data;
@@ -192,15 +441,171 @@ const renderPokemonData = data => {
     renderPokemonTypes(types);
     renderPokemonStats(stats);
 }
+const renderPokemonData2 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName2.textContent = data.name;
+    pokeImg2.setAttribute('src', sprite);
+    pokeId2.textContent = `Nº ${data.id}`;
+    setCardColor2(types);
+    renderPokemonTypes2(types);
+    renderPokemonStats2(stats);
+}
+const renderPokemonData3 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName3.textContent = data.name;
+    pokeImg3.setAttribute('src', sprite);
+    pokeId3.textContent = `Nº ${data.id}`;
+    setCardColor3(types);
+    renderPokemonTypes3(types);
+    renderPokemonStats3(stats);
+}
+const renderPokemonData4 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName4.textContent = data.name;
+    pokeImg4.setAttribute('src', sprite);
+    pokeId4.textContent = `Nº ${data.id}`;
+    setCardColor4(types);
+    renderPokemonTypes4(types);
+    renderPokemonStats4(stats);
+}
+const renderPokemonData5 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName5.textContent = data.name;
+    pokeImg5.setAttribute('src', sprite);
+    pokeId5.textContent = `Nº ${data.id}`;
+    setCardColor5(types);
+    renderPokemonTypes5(types);
+    renderPokemonStats5(stats);
+}
+const renderPokemonData6 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName6.textContent = data.name;
+    pokeImg6.setAttribute('src', sprite);
+    pokeId6.textContent = `Nº ${data.id}`;
+    setCardColor6(types);
+    renderPokemonTypes6(types);
+    renderPokemonStats6(stats);
+}
+const renderPokemonData7 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName7.textContent = data.name;
+    pokeImg7.setAttribute('src', sprite);
+    pokeId7.textContent = `Nº ${data.id}`;
+    setCardColor7(types);
+    renderPokemonTypes7(types);
+    renderPokemonStats7(stats);
+}
+const renderPokemonData8 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName8.textContent = data.name;
+    pokeImg8.setAttribute('src', sprite);
+    pokeId8.textContent = `Nº ${data.id}`;
+    setCardColor8(types);
+    renderPokemonTypes8(types);
+    renderPokemonStats8(stats);
+}
+const renderPokemonData9 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName9.textContent = data.name;
+    pokeImg9.setAttribute('src', sprite);
+    pokeId9.textContent = `Nº ${data.id}`;
+    setCardColor9(types);
+    renderPokemonTypes9(types);
+    renderPokemonStats9(stats);
+}
+const renderPokemonData10 = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+
+    pokeName10.textContent = data.name;
+    pokeImg10.setAttribute('src', sprite);
+    pokeId10.textContent = `Nº ${data.id}`;
+    setCardColor10(types);
+    renderPokemonTypes10(types);
+    renderPokemonStats10(stats);
+}
 
 
+/*  SET CARD COLOR  */
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
     pokeImg.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     pokeImg.style.backgroundSize = ' 5px 5px';
 }
+const setCardColor2 = types => {
+    const colorOne = typeColors2[types[0].type.name];
+    const colorTwo = types[1] ? typeColors2[types[1].type.name] : typeColors2.default;
+    pokeImg2.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg2.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor3 = types => {
+    const colorOne = typeColors3[types[0].type.name];
+    const colorTwo = types[1] ? typeColors3[types[1].type.name] : typeColors3.default;
+    pokeImg3.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg3.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor4 = types => {
+    const colorOne = typeColors4[types[0].type.name];
+    const colorTwo = types[1] ? typeColors4[types[1].type.name] : typeColors4.default;
+    pokeImg4.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg4.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor5 = types => {
+    const colorOne = typeColors5[types[0].type.name];
+    const colorTwo = types[1] ? typeColors5[types[1].type.name] : typeColors5.default;
+    pokeImg5.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg5.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor6 = types => {
+    const colorOne = typeColors6[types[0].type.name];
+    const colorTwo = types[1] ? typeColors6[types[1].type.name] : typeColors6.default;
+    pokeImg6.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg6.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor7 = types => {
+    const colorOne = typeColors7[types[0].type.name];
+    const colorTwo = types[1] ? typeColors7[types[1].type.name] : typeColors7.default;
+    pokeImg7.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg7.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor8 = types => {
+    const colorOne = typeColors8[types[0].type.name];
+    const colorTwo = types[1] ? typeColors8[types[1].type.name] : typeColors8.default;
+    pokeImg8.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg8.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor9 = types => {
+    const colorOne = typeColors9[types[0].type.name];
+    const colorTwo = types[1] ? typeColors9[types[1].type.name] : typeColors9.default;
+    pokeImg9.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg9.style.backgroundSize = ' 5px 5px';
+}
+const setCardColor10 = types => {
+    const colorOne = typeColors10[types[0].type.name];
+    const colorTwo = types[1] ? typeColors10[types[1].type.name] : typeColors10.default;
+    pokeImg10.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg10.style.backgroundSize = ' 5px 5px';
+}
 
+
+/*   RENDER POKEMON TYPES   */
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
     types.forEach(type => {
@@ -208,6 +613,87 @@ const renderPokemonTypes = types => {
         typeTextElement.style.color = typeColors[type.type.name];
         typeTextElement.textContent = type.type.name;
         pokeTypes.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes2 = types => {
+    pokeTypes2.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors2[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes2.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes3 = types => {
+    pokeTypes3.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors3[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes3.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes4 = types => {
+    pokeTypes4.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors4[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes4.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes5 = types => {
+    pokeTypes5.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors5[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes5.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes6 = types => {
+    pokeTypes6.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors6[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes6.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes7 = types => {
+    pokeTypes7.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors7[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes7.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes8 = types => {
+    pokeTypes8.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors8[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes8.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes9 = types => {
+    pokeTypes9.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors9[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes9.appendChild(typeTextElement);
+    });
+}
+const renderPokemonTypes10 = types => {
+    pokeTypes10.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors10[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes10.appendChild(typeTextElement);
     });
 }
 
@@ -232,69 +718,6 @@ const renderNotFound = () => {
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
     pokeId.textContent = '';
-}
-
-
-const typeColors2 = {
-    electric: '#FFEA70',
-    normal: '#B09398',
-    fire: '#FF675C',
-    water: '#0596C7',
-    ice: '#AFEAFD',
-    rock: '#999799',
-    flying: '#7AE7C7',
-    grass: '#4A9681',
-    psychic: '#FFC6D9',
-    ghost: '#561D25',
-    bug: '#A2FAA3',
-    poison: '#795663',
-    ground: '#D2B074',
-    dragon: '#DA627D',
-    steel: '#1D8A99',
-    fighting: '#2F2F2F',
-    default: '#2A1A1F',
-};
-
-function getRandomInt2(max) {
-    return Math.floor(Math.random() * max);
-  }
-
-const v2 = getRandomInt2(150);
-console.log(v2);
-
-fetch(`https://pokeapi.co/api/v2/pokemon/${v2}`)
-        .then(data => data.json())
-        .then(response => renderPokemonData2(response))
-        .catch(err => renderNotFound2());
-
-const renderPokemonData2 = data => {
-    const sprite =  data.sprites.front_default;
-    const { stats, types } = data;
-
-    pokeName2.textContent = data.name;
-    pokeImg2.setAttribute('src', sprite);
-    pokeId2.textContent = `Nº ${data.id}`;
-    setCardColor(types);
-    renderPokemonTypes2(types);
-    renderPokemonStats2(stats);
-}
-
-
-const setCardColor2 = types => {
-    const colorOne = typeColors[types[0].type.name];
-    const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
-    pokeImg2.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
-    pokeImg2.style.backgroundSize = ' 5px 5px';
-}
-
-const renderPokemonTypes2 = types => {
-    pokeTypes2.innerHTML = '';
-    types.forEach(type => {
-        const typeTextElement = document.createElement("div");
-        typeTextElement.style.color = typeColors[type.type.name];
-        typeTextElement.textContent = type.type.name;
-        pokeTypes2.appendChild(typeTextElement);
-    });
 }
 
 const renderPokemonStats2 = stats => {
