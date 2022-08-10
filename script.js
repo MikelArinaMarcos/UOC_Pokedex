@@ -383,16 +383,16 @@ function getRandomInt9(max) {
 function getRandomInt10(max) {
     return Math.floor(Math.random() * max);
 }
-const v1 = getRandomInt(450);
-const v2 = getRandomInt2(450);
-const v3 = getRandomInt3(450);
-const v4 = getRandomInt4(450);
-const v5 = getRandomInt5(450);
-const v6 = getRandomInt6(450);
-const v7 = getRandomInt7(450);
-const v8 = getRandomInt8(450);
-const v9 = getRandomInt9(450);
-const v10 = getRandomInt10(450);
+const v1 = getRandomInt(1154);
+const v2 = getRandomInt2(1154);
+const v3 = getRandomInt3(1154);
+const v4 = getRandomInt4(1154);
+const v5 = getRandomInt5(1154);
+const v6 = getRandomInt6(1154);
+const v7 = getRandomInt7(1154);
+const v8 = getRandomInt8(1154);
+const v9 = getRandomInt9(1154);
+const v10 = getRandomInt10(1154);
 
 
 /*  BÚSQUEDA EN API REST  */
@@ -437,6 +437,10 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${v10}`)
     .then(response => cargaCarta_10(response))
     .catch(err => renderNotFound10());
 
+
+fetch(`https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`)
+    .then(data => data.json())
+    .then(response => obtenMaximo(response))
 
 
 /*****************************************************/ 
