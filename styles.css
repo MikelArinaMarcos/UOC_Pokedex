@@ -24,6 +24,7 @@ body.dark{ /* Configuración del tema oscuro */
     --bg_index_color: #696969;
 }
 
+
 /******* Barra de navegación ******/
 .header{ /* Contenedor de la barra de navegación */
     height: 60px;
@@ -54,6 +55,7 @@ body.dark{ /* Configuración del tema oscuro */
     margin-left: 2%;
     margin-right: 2%;
     width: 33%;
+    position: relative;
 }
 
 .headerLink:link, .headerLink:visited{
@@ -74,14 +76,24 @@ body.dark{ /* Configuración del tema oscuro */
     color:var(--tx_color);
 }
 
-
-
 .radioDark{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    position: absolute;
+    top: 20px;
+}
+
+.radioDarkLabel{
+    position: absolute;
+    top: 20px;
     color: var(--tx_color);
-    float: right;
-    margin-top:3.5%;
+}
+
+.radioLight{
+    position: absolute;
+}
+
+.radioLightLabel{
+    position: absolute;
+    color: var(--tx_color);
 }
 
 .index img{
