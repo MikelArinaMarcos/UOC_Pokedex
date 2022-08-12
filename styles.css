@@ -245,10 +245,16 @@ input {
     transform-style: preserve-3d;
     transform-origin: 50% 25px;
   }
-  .card:hover, .card.flip{
+  .card:hover, .card.flip {
     -webkit-transform: rotate(360deg);
     transform: rotateY(180deg);
   }
+
+  .card:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(180deg);
+  }
+
   .front, .back{
     position: absolute;
     width: 100%;
