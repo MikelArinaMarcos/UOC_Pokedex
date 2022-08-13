@@ -1043,3 +1043,11 @@ const renderNotFound10 = () => {
     pokeStats10.innerHTML = '';
     pokeId10.textContent = '';
 }
+
+
+
+
+// PRUEBA 
+
+const cont = document.querySelector('#contenido');
+const back = document.querySelector('#back');
