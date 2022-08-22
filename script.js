@@ -51,7 +51,17 @@ radios.forEach( x => {
     })
 });
 
+function refreshBtn(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+    document.getElementById('card1').classList.add('rotate');
+    }, 100);
+    
+    setTimeout(()=>{
+    document.getElementById('card1').classList.remove('rotate');
+    }, rotacion);
 
+}
 
 
 

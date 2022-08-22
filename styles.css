@@ -245,7 +245,7 @@ input {
     transform-style: preserve-3d;
     transform-origin: 50% 25px;
   }
-    .card.flip {
+    /*.card.flip {
     -webkit-transform: rotate(360deg);
     transform: rotateX(180deg);
   }
@@ -253,7 +253,7 @@ input {
   .card:hover{
     -webkit-transform: rotate(360deg);
     transform: rotateY(180deg);
-  }
+  }*/
 
   .front, .back{
     position: absolute;
@@ -272,6 +272,7 @@ input {
         #dedede 10px,
         #dedede 20px
       );
+    border-radius: 10px;
   }
 
   .back{
@@ -279,3 +280,23 @@ input {
 
     border-radius: 10px;
   }
+
+  .buttonCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .rotate {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(180deg);
+ }
+ @-moz-keyframes spin {
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+ }
+ @-webkit-keyframes spin {
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+ }
+ @keyframes spin { 
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+ }
