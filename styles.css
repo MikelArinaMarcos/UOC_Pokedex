@@ -245,9 +245,9 @@ input {
     transform-style: preserve-3d;
     transform-origin: 50% 25px;
   }
-  .card:hover, .card.flip {
+    .card.flip {
     -webkit-transform: rotate(360deg);
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
   }
 
   .card:hover{
@@ -264,14 +264,18 @@ input {
     text-align: center;
   }
 
-  .back{
-    transform: rotateX(180deg);
+  .front{
     background: repeating-linear-gradient(
-      -45deg,
-      #ececec,
-      #ececec 10px,
-      #dedede 10px,
-      #dedede 20px
-    );
+        -45deg,
+        #ececec,
+        #ececec 10px,
+        #dedede 10px,
+        #dedede 20px
+      );
+  }
+
+  .back{
+    transform: rotateY(180deg);
+
     border-radius: 10px;
   }
