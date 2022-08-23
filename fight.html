@@ -32,7 +32,7 @@
         <div data-poke-card id="flip-container">
             <div id="card1" class="card">
                 <div class="front">
-                    <button id="btnRefresh" class="btnRefreshClass" onclick="refreshBtn()">girar</button>
+                    <button id="btnRefresh" class="btnRefreshClass" onclick="volteoCarta1()">girar</button>
                 </div>
                 <div class="back">
                     <div class="cardHeader">
@@ -58,28 +58,30 @@
         </div>
         <br>
         <!--Carta 2-->
-        <div data-poke-card2 class="poke-card">
-            <div class="cardHeader">
-                <div class="index_parts">
-                    <img src="assets/pokemonTitle.png">
+        <div data-poke-card2 id="flip-container">
+            <div id="card2" class="card">
+                <div class="front">
+                    <button id="btnRefresh" class ="btnRefreshClass" onclick="volteoCarta2()"> Voltear carta</button>
                 </div>
+                <div class="back">
+                    <div class="cardHeader">
+                        <div class="index_parts">
+                            <img src="assets/pokemonTitle.png">
+                        </div>
+                    </div>
+                    <div class="cardMain">
+                        <div data-poke-name2>Pokedex</div>
+                        <div data-poke-img-container2 class="img-container">
+                            <img data-poke-img2 class="poke-img" src="./poke-shadow.png"/>
+                        </div>
+                        <div data-poke-id2></div>
+                        <div data-poke-types2 class="poke-types"></div>
+                        <div data-poke-stats2 class="poke-stats"></div>        
+                        <div data-poke-stats-2_2 class="poke-stats"></div>
+                    </div>
+                </div>   
             </div>
-            <div class="cardMain">
-                <div data-poke-name2>Pokedex</div>
-                <div data-poke-img2-container2 class="img-container">
-                    <img data-poke-img2 class="poke-img" src="./poke-shadow.png"/>
-                </div>
-                <div data-poke-id2></div>
-                <div data-poke-types2 class="poke-types"></div>
-                <div data-poke-stats2 class="poke-stats"></div>
-                <div data-poke-stats-2_2 class="poke-stats"></div>
-            </div>
-            <div class="infoButtonSection">
-                <button class="infoButton">More info.</button>
-            </div>   
         </div>
-    </div>
-    <div>
         <!--Carta 3-->
         <div data-poke-card3 class="poke-card">
             <div class="cardHeader">

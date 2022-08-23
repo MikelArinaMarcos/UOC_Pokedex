@@ -51,17 +51,7 @@ radios.forEach( x => {
     })
 });
 
-function refreshBtn(){
-    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
-    setTimeout(()=>{
-    document.getElementById('card1').classList.add('rotate');
-    }, 100);
-    
-    setTimeout(()=>{
-    document.getElementById('card1').classList.remove('rotate');
-    }, rotacion);
 
-}
 
 
 
@@ -1052,4 +1042,101 @@ const renderNotFound10 = () => {
     pokeTypes10.innerHTML = '';
     pokeStats10.innerHTML = '';
     pokeId10.textContent = '';
+}
+
+
+
+//    SCRIPT PARA FIGHT.HTML    \\
+
+// Funciones para voltear las cartas
+function volteoCarta1(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card1').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card1').classList.remove('rotate');
+    }, rotacion);
+
+}
+function volteoCarta2(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card2').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card2').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta3(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card3').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card3').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta4(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card4').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card4').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta5(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card5').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card5').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta6(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card6').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card6').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta7(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card7').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card7').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta8(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card8').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card8').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta9(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card9').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card9').classList.remove('rotate');
+    }, rotacion);
+}
+function volteoCarta10(){
+    let rotacion= (360/100) * 2.5; // calculo el tiempo de rotacion
+    setTimeout(()=>{
+        document.getElementById('card10').classList.add('rotate');
+    }, 100);
+    setTimeout(()=>{
+        document.getElementById('card10').classList.remove('rotate');
+    }, rotacion);
 }
