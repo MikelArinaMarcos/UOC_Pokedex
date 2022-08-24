@@ -152,6 +152,7 @@ input {
 }
 
 .poke-card {
+    display: none;
     position: relative;
     height: 350px;
     font-family: 'Roboto Mono', monospace;

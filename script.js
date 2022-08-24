@@ -1046,6 +1046,7 @@ const renderNotFound10 = () => {
 
 
 
+<<<<<<< HEAD
 //    SCRIPT PARA FIGHT.HTML    \\
 
 // Funciones para voltear las cartas
@@ -1139,4 +1140,20 @@ function volteoCarta10(){
     setTimeout(()=>{
         document.getElementById('card10').classList.remove('rotate');
     }, rotacion);
+=======
+
+// PRUEBA 
+
+const cont = document.querySelector('#contenido');
+const back = document.querySelector('#back');
+const links = document.querySelectorAll('.link');
+
+back.style.display = "none";
+
+let params = new URLSearchParams(document.location.search);
+let letra = params.get("letra");
+if(letra){
+    cont.innerHTML = `<strong>${letra}</strong>`;
+    back.style.display = "block";
+>>>>>>> infoCompleta
 }
