@@ -1044,9 +1044,6 @@ const renderNotFound10 = () => {
     pokeId10.textContent = '';
 }
 
-
-
-<<<<<<< HEAD
 //    SCRIPT PARA FIGHT.HTML    \\
 
 // Funciones para voltear las cartas
@@ -1140,7 +1137,7 @@ function volteoCarta10(){
     setTimeout(()=>{
         document.getElementById('card10').classList.remove('rotate');
     }, rotacion);
-=======
+}
 
 // PRUEBA 
 
@@ -1155,5 +1152,5 @@ let letra = params.get("letra");
 if(letra){
     cont.innerHTML = `<strong>${letra}</strong>`;
     back.style.display = "block";
->>>>>>> infoCompleta
+    infoCompleta
 }
