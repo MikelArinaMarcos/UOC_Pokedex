@@ -24,12 +24,12 @@ body.dark{ /* Configuración del tema oscuro */
     --bg_index_color: #696969;
 }
 
-html, body{
+html, body{ /* Ancho y alto de las páginas */
     height: 100%;
     width: 100%;
 }
 
-header{
+header{ /* Barra de navegación superior */
     position: fixed;
     height: 10%;
     width: 100%;
@@ -39,31 +39,29 @@ header{
     z-index: 2;
 }
 
-main{
+main{ /* Parte principal de la página */
     position: fixed;
-    background-color: aqua;
     height: 80%;
     width: 100%;
     top: 10%;
     left: 0;
 }
-footer{
+footer{ /* Barra de navegación inferior */
     position: fixed;
     background-color: rosybrown;
     height: 10%;
     width: 100%;
     top: 90%;
     left: 0;
-
 }
-/******* Barra de navegación ******/
 
+/******* Barra de navegación ******/
 .navigation{
     height: 100%;
     background-color: var(--bg_color);
 }
 
-.index{ /* Barra de navegación */
+.navigation_bar{ /* Barra de navegación */
     top: 0;
     left: 0;
     list-style-type: none;
@@ -75,9 +73,10 @@ footer{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
-.index_parts{ /* Partes de la barra de navegación */
+.navigation_content{ /* Partes de la barra de navegación */
     margin-left: 2%;
     margin-right: 2%;
     width: 33%;
@@ -86,8 +85,8 @@ footer{
 
 .headerLink:link, .headerLink:visited{
     float: left;
-    height: 50px;
-    padding-top: 3%;
+    height: 55px;
+    padding-top: 4%;
     font-size: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -95,7 +94,7 @@ footer{
     text-decoration: none;
 }
 
-.headerLink:hover{
+.headerLink:hover{ /*Configuración al situarse encima de las opciones del menú */
     border: 2px solid var(--tx_color);
     border-width: auto;
     background-color: var(--bg_index_color);
@@ -104,32 +103,37 @@ footer{
 
 .radioDark{
     position: absolute;
-    top: 20px;
+    top: 50%;
 }
 
 .radioDarkLabel{
     position: absolute;
-    top: 20px;
+    top: 50%;
+    left: 80%;
     color: var(--tx_color);
 }
 
 .radioLight{
     position: absolute;
+    top: 20%;
 }
 
 .radioLightLabel{
     position: absolute;
+    top: 20%;
+    left: 80%;
     color: var(--tx_color);
 }
 
-.index img{
-    height: 45px;
+.navigation_bar img{
+    height: 60px;
     width: auto;
     float: center;
+    
     margin-top: 1%;
 }
 
-
+/****** Configuración para index.html ******/
 
 
 
