@@ -31,7 +31,7 @@ html, body{ /* Ancho y alto de las páginas */
 
 header{ /* Barra de navegación superior */
     position: fixed;
-    height: 10%;
+    height: 60px;
     width: 100%;
     background-color: #001;
     top: 0;
@@ -41,9 +41,8 @@ header{ /* Barra de navegación superior */
 
 main{ /* Parte principal de la página */
     position: fixed;
-    height: 80%;
     width: 100%;
-    top: 10%;
+    top: 60px;
     left: 0;
 }
 footer{ /* Barra de navegación inferior */
@@ -53,6 +52,10 @@ footer{ /* Barra de navegación inferior */
     width: 100%;
     top: 90%;
     left: 0;
+}
+
+.info{
+    width: 25%;
 }
 
 /******* Barra de navegación ******/
@@ -135,7 +138,17 @@ footer{ /* Barra de navegación inferior */
 
 /****** Configuración para index.html ******/
 
-
+.cardsContainer{ /* Sección donde se muestran las cartas */
+    float: left;
+    background-color:#dedede;
+    width: 75%;
+}
+.infoDetContainer{ /* Sección donde se muestra la información detallada */
+    float: right;
+    width: 24.5%;
+    background-color: beige;
+    border-left: #000 3px solid;
+}
 
 
 
@@ -149,9 +162,9 @@ footer{ /* Barra de navegación inferior */
 
 .cardHeader img{
     height: 20px;
-    width: 100%;
+    width: 60%;
     float: center;
-    margin-top: 5%;
+    margin-top: 2%;
     align-content: center;
     align-items: center;
 }
@@ -182,7 +195,6 @@ input {
 }
 
 .poke-card {
-    display: none;
     position: relative;
     height: 350px;
     font-family: 'Roboto Mono', monospace;
@@ -191,7 +203,7 @@ input {
     color: #000;
     text-align: center;
     padding: 0px;
-    margin: 0 20px;
+    margin: 20px 20px;
     background-color: #FFF;
     border: 1px solid black;
 }
@@ -322,6 +334,7 @@ input {
     -webkit-transform: rotate(360deg);
     transform: rotateY(180deg);
  }
+
  @-moz-keyframes spin {
      100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
  }
@@ -331,3 +344,16 @@ input {
  @keyframes spin { 
      100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
