@@ -136,24 +136,48 @@ footer{ /* Barra de navegación inferior */
     margin-top: 1%;
 }
 
-/****** Configuración para index.html ******/
+/*************************************/
+/*   Configuración para index.html   */
+/*************************************/
 
-.cardsContainer{ /* Sección donde se muestran las cartas */
+/* Sección principal donde se muestran las cartas */
+.cardsContainer{
     float: left;
     background-color:#dedede;
     width: 75%;
 }
-.infoDetContainer{ /* Sección donde se muestra la información detallada */
+
+/* Sección lateral donde se muestra la información detallada */
+.infoDetContainer{
     float: right;
     width: 24.5%;
     background-color: beige;
     border-left: #000 3px solid;
 }
 
-
-.rowsCards{ /* Primera fila de cartas */
+/* Primera fila de cartas */
+.rowsCards{
     margin-top: 10px;
+    float: left;
 }
+
+.cardIndex{
+        position:relative;
+        height: 350px;
+        width: 250px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 10px;
+        color: #000;
+        text-align: center;
+        padding: 0px;
+        margin: 0 20px;
+        background-color: #FFF;
+        border: 1px solid black;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        transform-origin: 50% 25px;
+      }
+
 .cardHeader{
     height: 30px;
     top: 0;
