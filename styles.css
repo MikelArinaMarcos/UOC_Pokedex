@@ -151,7 +151,9 @@ footer{ /* Barra de navegación inferior */
 }
 
 
-
+.rowsCards{ /* Primera fila de cartas */
+    margin-top: 10px;
+}
 .cardHeader{
     height: 30px;
     top: 0;
