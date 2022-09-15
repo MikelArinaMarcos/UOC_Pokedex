@@ -161,8 +161,23 @@ footer{ /* Barra de navegación inferior */
     float: left;
 }
 
+/* Contenedor de la carta */
+.pokeCard{
+        float:left; /* Una carta al lado de la otra */
+        margin: 10px; /* Margen de 10px por todos los lados de la carta */
+        height: 350px; /* Altura de la carta */
+        width: 250px; /* Anchura de la carta */
+        font-family: 'Roboto Mono', monospace; /* Tipología del texto de la carta */
+        color: #000; /* Color del texto */
+        text-align: center; /* Texto centrado */
+        border-radius: 10px; /* Esquinas redondeadas para dar apariencia de carta */
+        border: 1px solid black; /* Borde de la carta */
+        background-color: #FFF; /* Color de fondo de la carta */
+}
+
+
 .cardIndex{
-        position:relative;
+        float:left;
         height: 350px;
         width: 250px;
         font-family: 'Roboto Mono', monospace;
@@ -221,7 +236,7 @@ input {
 }
 
 .poke-card {
-    position: relative;
+    float: left;
     height: 350px;
     font-family: 'Roboto Mono', monospace;
     width: 250px;
