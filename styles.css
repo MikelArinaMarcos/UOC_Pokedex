@@ -148,6 +148,14 @@ footer{ /* Barra de navegación inferior */
     width: 75%;
 }
 
+/* Sección de búsqueda de un Pokémon en concreto */
+.searchText{
+    font-size: large;
+    margin-left: 5px;
+    color: var(--tx_color);
+}
+
+
 /* Sección lateral donde se muestra la información detallada */
 .infoDetContainer{
     float: right;
