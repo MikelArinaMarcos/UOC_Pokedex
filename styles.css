@@ -15,7 +15,7 @@
 body.light{ /* Configuración del tema claro */
     --bg_color: aquamarine;
     --tx_color: #001;
-    --bg_index_color: aqua;
+    --bg_index_color: #F2F0EF;
 }
 
 body.dark{ /* Configuración del tema oscuro */
@@ -144,14 +144,34 @@ footer{ /* Barra de navegación inferior */
 /* Sección principal donde se muestran las cartas */
 .cardsContainer{
     float: left;
-    background-color:#dedede;
+    background-color: var(--bg_index_color);
     width: 75%;
 }
 
 /* Sección de búsqueda de un Pokémon en concreto */
+
+.searchContainer{
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg_index_color);
+}
+
 .searchText{
     font-size: large;
     margin-left: 5px;
+    color: var(--tx_color);
+}
+
+.searchBox{
+    margin-left: 5px;
+    background-color: var(--bg_color);
+    color: var(--tx_color);
+}
+
+.searchButton{
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: var(--bg_color);
     color: var(--tx_color);
 }
 
