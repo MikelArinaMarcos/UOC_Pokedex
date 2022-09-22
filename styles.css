@@ -163,7 +163,7 @@ footer{ /* Barra de navegación inferior */
 }
 
 .searchBox{
-    margin-left: 5px;
+    width: 200px;
     background-color: var(--bg_color);
     color: var(--tx_color);
 }
