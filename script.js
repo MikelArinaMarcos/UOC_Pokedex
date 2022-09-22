@@ -1138,3 +1138,7 @@ function volteoCarta10(){
         document.getElementById('card10').classList.remove('rotate');
     }, rotacion);
 }
+
+function mostrarInfoCompleta(){
+    document.getElementById('infoButton').hidden();
+}
