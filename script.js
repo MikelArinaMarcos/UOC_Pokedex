@@ -6,17 +6,15 @@ if(themeColor){
     updateRadio(themeColor);
 }
 
-
+// Función para seleccionar el tema de la página (claro / oscuro)
 function selectTheme(theme){
     switch(theme){
         case 'dark':
-            console.log('aplicar dark');
             body.classList.remove('light');
             body.classList.add('dark');
             window.localStorage.setItem('tema','dark');
             break;
         case 'light':
-            console.log('aplicar light');
             body.classList.remove('dark');
             body.classList.add('light');
             window.localStorage.setItem('tema','light');
@@ -26,7 +24,7 @@ function selectTheme(theme){
     }
 }
 
-
+// Función para cambio el radioButton del tema de la página
 function updateRadio(value){
     switch (value) {
         case 'dark':
@@ -1140,5 +1138,6 @@ function volteoCarta10(){
 }
 
 function mostrarInfoCompleta(){
-    document.getElementById('infoButton').hidden();
+    let nom = document.getElementById('infoButton');
+    nom = hidden();
 }
