@@ -1136,8 +1136,3 @@ function volteoCarta10(){
         document.getElementById('card10').classList.remove('rotate');
     }, rotacion);
 }
-
-function mostrarInfoCompleta(){
-    let nom = document.getElementById('infoButton');
-    nom = hidden();
-}

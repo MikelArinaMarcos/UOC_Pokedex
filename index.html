@@ -21,7 +21,7 @@
                     <a class="headerLink" href="fight.html">Fight</a>
                 </div>
                 <div class="navigation_content">
-                    <img src="assets/pokemonTitle.png" class="logo">
+                    <img src="assets/pokemonTitle.png">
                 </div>
                 <div class="navigation_content">
                     <input type="radio" name="theme" id="radioDark" class="radioDark" value="dark">
@@ -37,7 +37,7 @@
     <div class="main">
 
         <!-- Parte donde se muestran las cartas -->
-        <div id="cardsContainer" class="cardsContainer">
+        <div id="demo" class="cardsContainer">
             <div id="firstRowCards" class="rowsCards">
                 <!-- Card 1 -->
                 <div data-poke-card id="pokeCard" class="pokeCard">
@@ -57,7 +57,7 @@
                             <div data-poke-stats-2 class="poke-stats"></div>
                         </div>
                         <div class="infoButtonSection">
-                            <button id="infoButton" class="infoButton" onClick="mostrarInfoCompleta()">More info.</button>
+                            <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
                         </div>
                 </div>
                 <!-- Card 2 -->
@@ -252,13 +252,7 @@
             </div>
         </div>
         <div id="infoDetContainer" class="infoDetContainer">
-            <div id="searchContainer" class="searchContainer">
-                <p class="searchText"> Search a certain Pokemon: </p>
-                <input type="search" class="searchBox" placeholder="Search a Pokémon">
-                <button class="searchButton">Buscar</button>
-                <hr>
-            </div>
-            <h1>Adiós</h1>
+            <h1 id="demo">Adiós</h1>
         </div>
     </div>
 
